@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GithubTrending</string>
+    <string name="trending_app_bar_title">Trending</string>
+    <string name="content_description_image_stars">stars</string>
+    <string name="content_description_image_forks">forks</string>
+    <string name="content_description_no_internet">No internet</string>
+    <string name="trending_error_title">Something went wrong</string>
+    <string name="trending_error_subtitle">An alien is probably blocking your signal</string>
+    <string name="trending_error_retry">Retry</string>
+    <string name="action_trending_menu_item_sort_by_name">Sort by name</string>
+    <string name="action_trending_menu_item_sort_by_stars">Sort by stars</string>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/ll_repository_item_container"
+    android:animateLayoutChanges="true"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_avatar"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:src="@drawable/ic_launcher_background"
+        tools:src="@drawable/ic_launcher_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_organization_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="6dp"
+            android:textColor="#52575C"
+            android:textSize="12sp"
+            tools:text="octocat" />
+
+        <TextView
+            android:id="@+id/tv_repository_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#52575C"
+            android:textSize="15sp"
+            tools:text="github" />
+
+        <TextView
+            android:id="@+id/tv_repository_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingVertical="8dp"
+            android:textColor="#52575C"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:text="github" />
+
+        <LinearLayout
+            android:id="@+id/ll_stats_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/v_language_circle"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/circle" />
+
+            <TextView
+                android:id="@+id/tv_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingStart="4dp"
+                android:paddingEnd="16dp"
+                android:textColor="#52575C"
+                android:textSize="12sp"
+                tools:text="C++" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/content_description_image_stars"
+                android:src="@drawable/star_yellow_16" />
+
+            <TextView
+                android:id="@+id/tv_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingStart="4dp"
+                android:paddingEnd="16dp"
+                android:textColor="#52575C"
+                android:textSize="12sp"
+                tools:text="14,200" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/content_description_image_forks"
+                android:src="@drawable/fork_black_16" />
+
+            <TextView
+                android:id="@+id/tv_forks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:textColor="#52575C"
+                android:textSize="12sp"
+                tools:text="200" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
